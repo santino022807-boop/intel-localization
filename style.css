@@ -5,12 +5,14 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #f4f7fb;
-  color: #111;
+  background-color: #f4f7fb;
+  color: #1a1a1a;
 }
 
+/* HERO */
+
 header {
-  background: #0071c5;
+  background-color: #0068b5;
   color: white;
   text-align: center;
   padding: 60px 20px;
@@ -23,15 +25,17 @@ header img {
 
 header h1 {
   font-size: 42px;
-  margin: 10px 0;
+  margin-bottom: 15px;
 }
 
 header p {
   max-width: 700px;
-  margin: 0 auto;
+  margin: auto;
   font-size: 18px;
   line-height: 1.6;
 }
+
+/* TIMELINE */
 
 .timeline {
   display: flex;
@@ -43,9 +47,10 @@ header p {
 
 .card {
   flex: 0 0 300px;
-  background: white;
-  border-radius: 14px;
   padding: 20px;
+  border: none;
+  border-radius: 14px;
+  background: white;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
   scroll-snap-align: start;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -53,17 +58,16 @@ header p {
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
 }
 
 .card h2 {
-  color: #0071c5;
+  color: #0068b5;
   font-size: 30px;
-  margin-bottom: 5px;
 }
 
 .card h3 {
-  margin-top: 0;
+  font-size: 21px;
 }
 
 .card img {
@@ -79,7 +83,6 @@ header p {
   max-height: 0;
   overflow: hidden;
   transition: opacity 0.3s ease, max-height 0.3s ease;
-  line-height: 1.5;
 }
 
 .card:hover p {
@@ -90,11 +93,74 @@ header p {
 .instructions {
   text-align: center;
   font-weight: bold;
-  padding: 0 20px 40px;
   color: #555;
+  padding-bottom: 20px;
 }
 
+/* THREE COLUMN SECTION */
+
+.info-box {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.info-icon {
+  font-size: 45px;
+  color: #0068b5;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.info-box h2 {
+  font-size: 24px;
+}
+
+/* NEWSLETTER */
+
+.newsletter {
+  background-color: #e8f3fa;
+}
+
+.newsletter-form {
+  max-width: 600px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #222;
+  color: white;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* RTL SUPPORT */
+
+html[dir="rtl"] body {
+  direction: rtl;
+}
+
+html[dir="rtl"] .timeline {
+  direction: rtl;
+}
+
+/* MOBILE */
+
 @media (max-width: 700px) {
+
   header h1 {
     font-size: 32px;
   }

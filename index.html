@@ -1,16 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Intel: Sustainability Through the Ages</title>
+
+  <!-- Bootstrap -->
+  <link
+    id="bootstrap-css"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <header>
-    <img src="img/intel-header-logo.svg" alt="Intel Logo">
+    <img src="img/intel-header-logo.svg" alt="Intel company logo">
 
     <h1>Sustainability Through the Ages</h1>
 
@@ -21,12 +36,14 @@
   </header>
 
   <main>
-    <section class="timeline">
+
+    <!-- TIMELINE -->
+    <section class="timeline" aria-label="Intel sustainability timeline">
 
       <article class="card">
         <h2>1968</h2>
         <h3>Intel Founded</h3>
-        <img src="img/1.jpg" alt="Intel history">
+        <img src="img/1.jpg" alt="Historic Intel technology">
         <p>
           Robert Noyce and Gordon Moore rename the newly formed company
           NM Electronics to Intel Corporation, laying the foundation for
@@ -37,49 +54,47 @@
       <article class="card">
         <h2>1971</h2>
         <h3>First Microprocessor</h3>
-        <img src="img/2.jpg" alt="Intel microprocessor">
+        <img src="img/2.jpg" alt="Early Intel microprocessor technology">
         <p>
           Intel debuts the 4004, the world's first commercial microprocessor,
-          igniting the microprocessor revolution and helping shape the future
-          of computing.
+          helping launch the microprocessor revolution.
         </p>
       </article>
 
       <article class="card">
         <h2>1978</h2>
         <h3>8086 Processor</h3>
-        <img src="img/3.jpg" alt="Computer processor">
+        <img src="img/3.jpg" alt="Intel processor technology">
         <p>
           Intel launches the 8086 processor, establishing the x86 architecture
-          that powers countless PCs and servers.
+          used by generations of computers.
         </p>
       </article>
 
       <article class="card">
         <h2>1985</h2>
         <h3>386 Processor</h3>
-        <img src="img/4.jpg" alt="Intel technology">
+        <img src="img/4.jpg" alt="Intel computer processor">
         <p>
           Intel introduces the 386 processor with 32-bit architecture,
-          bringing improved performance and multitasking to personal computers.
+          improving performance and multitasking for personal computers.
         </p>
       </article>
 
       <article class="card">
         <h2>2006</h2>
         <h3>Peak GHG Emissions</h3>
-        <img src="img/1.jpg" alt="Sustainability">
+        <img src="img/1.jpg" alt="Technology and environmental sustainability">
         <p>
-          This year marks Intel's highest annual greenhouse gas emissions.
           Intel later invests in renewable energy, chemical abatement,
-          and more efficient manufacturing.
+          and more efficient manufacturing to reduce emissions.
         </p>
       </article>
 
       <article class="card">
         <h2>2020</h2>
         <h3>RISE Strategy</h3>
-        <img src="img/2.jpg" alt="Environmental technology">
+        <img src="img/2.jpg" alt="Technology supporting environmental goals">
         <p>
           Intel launches its RISE strategy and 2030 goals focused on climate
           action, water stewardship, waste reduction, and positive impact.
@@ -89,32 +104,30 @@
       <article class="card">
         <h2>2022</h2>
         <h3>Net-Zero By 2040</h3>
-        <img src="img/3.jpg" alt="Clean energy">
+        <img src="img/3.jpg" alt="Clean energy technology">
         <p>
           Intel announces its commitment to achieve net-zero greenhouse gas
-          emissions across its global operations by 2040.
+          emissions across global operations by 2040.
         </p>
       </article>
 
       <article class="card">
         <h2>2023</h2>
         <h3>Renewable Electricity</h3>
-        <img src="img/4.jpg" alt="Renewable electricity">
+        <img src="img/4.jpg" alt="Renewable electricity and sustainable technology">
         <p>
           Intel reaches 99% renewable electricity usage worldwide,
-          reducing carbon emissions and supporting its long-term
-          sustainability goals.
+          supporting its long-term sustainability goals.
         </p>
       </article>
 
       <article class="card">
         <h2>2024</h2>
         <h3>Sustainability Summit</h3>
-        <img src="img/1.jpg" alt="Sustainability collaboration">
+        <img src="img/1.jpg" alt="People collaborating on sustainability">
         <p>
           Intel hosts its first Sustainability Summit, bringing together
-          suppliers, government officials, and industry leaders to advance
-          sustainable semiconductor manufacturing.
+          suppliers, government officials, and industry leaders.
         </p>
       </article>
 
@@ -123,7 +136,197 @@
     <p class="instructions">
       Scroll to view timeline • Hover over cards to learn more
     </p>
+
+    <!-- THREE COLUMN SECTION -->
+    <section class="container py-5">
+      <div class="row g-4 text-center">
+
+        <div class="col-12 col-md-4">
+          <div class="info-box h-100 p-4">
+            <i class="bi bi-globe2 info-icon"></i>
+            <h2>Sustainable Technology</h2>
+            <p>
+              Intel continues developing technology while working to reduce
+              the environmental impact of its operations.
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="info-box h-100 p-4">
+            <i class="bi bi-droplet-half info-icon"></i>
+            <h2>Water & Energy</h2>
+            <p>
+              Intel invests in renewable electricity, water conservation,
+              and more efficient manufacturing practices.
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-4">
+          <div class="info-box h-100 p-4">
+            <i class="bi bi-recycle info-icon"></i>
+            <h2>Waste Reduction</h2>
+            <p>
+              Intel works to reduce waste and improve reuse and recycling
+              across its operations.
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- BONUS BOOTSTRAP ACCORDION -->
+    <section class="container pb-5">
+      <h2 class="text-center mb-4">Learn More About Sustainability</h2>
+
+      <div class="accordion" id="sustainabilityAccordion">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#itemOne">
+              Why does sustainability matter in technology?
+            </button>
+          </h2>
+
+          <div
+            id="itemOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#sustainabilityAccordion">
+            <div class="accordion-body">
+              Technology companies use energy, water, and raw materials.
+              Improving efficiency can reduce environmental impact.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#itemTwo">
+              What does net-zero mean?
+            </button>
+          </h2>
+
+          <div
+            id="itemTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#sustainabilityAccordion">
+            <div class="accordion-body">
+              Net-zero means reducing greenhouse gas emissions as much as
+              possible while addressing remaining emissions.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter py-5">
+      <div class="container">
+
+        <h2 class="text-center">Stay Updated</h2>
+
+        <p class="text-center">
+          Subscribe to receive sustainability news and updates.
+        </p>
+
+        <form class="mx-auto newsletter-form">
+
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              required
+              aria-describedby="emailHelp">
+
+            <div id="emailHelp" class="form-text">
+              We'll never share your email with anyone else.
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary">
+            Subscribe
+          </button>
+
+        </form>
+      </div>
+    </section>
+
   </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-4">
+
+    <p>© 2026 Intel Sustainability Timeline Project</p>
+
+    <nav aria-label="Footer navigation">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">Contact</a>
+    </nav>
+
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+
+  <!-- BONUS: AUTO RTL DETECTION -->
+  <script>
+    const rtlLanguages = ["ar", "he", "fa", "ur"];
+
+    function updateDirection() {
+      const html = document.documentElement;
+      const language = html.lang.toLowerCase().split("-")[0];
+      const bootstrapCSS = document.getElementById("bootstrap-css");
+
+      if (rtlLanguages.includes(language)) {
+        html.dir = "rtl";
+        bootstrapCSS.href =
+          "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css";
+      } else {
+        html.dir = "ltr";
+        bootstrapCSS.href =
+          "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css";
+      }
+    }
+
+    updateDirection();
+
+    const observer = new MutationObserver(updateDirection);
+
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ["lang"]
+    });
+  </script>
 
 </body>
 </html>
